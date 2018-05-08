@@ -1,0 +1,42 @@
+name: CryptoCraft
+version: a.1.0
+main: xyz.cowsaysmoo.CryptoCraft
+commands:
+    tip:
+      description: Tip any player coins, default anonymous.
+      usage: /tip <doge,btc,ltc> <player> <amount> <anon y,n>
+    withdraw:
+      description: Withdraw coins to address.
+      usage: /withdraw <doge,btc,ltc> <address> <amount>
+    donate:
+      description: Donate to the server <3 :3.
+      usage: /donate <doge,btc,ltc> <amount>
+    balance:
+      description: See how many coins you have.
+      usage: /balance <doge,btc,ltc>
+    deposit:
+      description: Display your deposit address.
+      usage: /deposit <doge,btc,ltc>
+    wallet:
+      description: Create wallet.
+      usage: /wallet <doge,btc,ltc>
+    shift:
+      description: Trade coins.
+      usage: /shift <amount> <from-coint> <to-coin>
+    #dogedeposit:
+    #  description: Display your Doge address to deposit to.
+    #  usage: /dogedeposit
+    #dogewithdraw:
+    #  description: See how many Dogecoins you have.
+    #  usage: /dogewithdraw <Send-To-This-Address> <Amount>
+    #dogebalance:
+    #  description: See how many Dogecoins you have.
+    #  usage: /dogebalance
+    #dogetip:
+    #  description: Tip any player Dogecoins.
+    #  usage: /dogetip <Player> <Amount>
+    #dogedonate:
+    #  description: Donate to the server <3 :3.
+    #  usage: /dogedonate
+    
+   
