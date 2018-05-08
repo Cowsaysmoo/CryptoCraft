@@ -22,7 +22,7 @@ commands:
       usage: /wallet <doge,btc,ltc>
     shift:
       description: Trade coins.
-      usage: /shift <amount> <from-coint> <to-coin>
+      usage: /shift <amount> <from-coin> <to-coin>
     #dogedeposit:
     #  description: Display your Doge address to deposit to.
     #  usage: /dogedeposit
