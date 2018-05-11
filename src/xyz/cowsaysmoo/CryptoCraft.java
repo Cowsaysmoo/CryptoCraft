@@ -34,6 +34,7 @@ public class CryptoCraft extends JavaPlugin{
         config.addDefault("donate-address", "DK2ae1tjmCMud78TTiGMwkkHqFQdCzhMV7");
         config.options().copyDefaults(true);
         saveConfig();
+        
         this.getCommand("tip").setExecutor(new CommandTip());
         this.getCommand("withdraw").setExecutor(new CommandWithdraw());
         this.getCommand("donate").setExecutor(new CommandDonate());
@@ -41,12 +42,6 @@ public class CryptoCraft extends JavaPlugin{
         this.getCommand("deposit").setExecutor(new CommandDeposit());
         this.getCommand("wallet").setExecutor(new CommandWallet());
         this.getCommand("shift").setExecutor(new CommandShift());
-        /*this.getCommand("doge").setExecutor(new CommandDoge());
-        this.getCommand("btc").setExecutor(new CommandBtc());
-        this.getCommand("ltc").setExecutor(new CommandLtc());
-        this.getCommand("dogetest").setExecutor(new CommandDogetest());
-        this.getCommand("btctest").setExecutor(new CommandBtctest());
-        this.getCommand("ltctest").setExecutor(new CommandLtctest());*/
     }
     
     @Override
@@ -63,13 +58,10 @@ public class CryptoCraft extends JavaPlugin{
     private void createPlayers() throws FileNotFoundException, InvalidConfigurationException {
         playersFile = new File(getDataFolder(), "players.yml");
 
-        if (!playersFile.exists()) {
-           
+        if (!playersFile.exists()) {  
             playersFile.getParentFile().mkdirs();
-            saveResource("players.yml", false);
-            
+            saveResource("players.yml", false); 
         }
-
         players = new YamlConfiguration();
         try {
             players.load(playersFile);
