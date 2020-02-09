@@ -7,11 +7,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerLoginEvent;
 
-/**
- *
- * @author Jared
- */
-
 class MyListener implements Listener {
     
     @EventHandler
@@ -27,7 +22,8 @@ class MyListener implements Listener {
     public void onPlayerLogin(PlayerLoginEvent event) throws IOException{
         
         Player playerJoined = event.getPlayer();
-        ConfigPlayerlist list = new ConfigPlayerlist(playerJoined);
+        ConfigPlayerlist list = new ConfigPlayerlist();
+        list.ConfigPlayerlist(playerJoined);
     }
 }
     

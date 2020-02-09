@@ -1,5 +1,5 @@
 name: CryptoCraft
-version: a.1.0
+version: a.1.1
 main: xyz.cowsaysmoo.CryptoCraft
 commands:
     tip:
@@ -23,6 +23,9 @@ commands:
     shift:
       description: Trade coins.
       usage: /shift <amount> <from-coin> <to-coin>
+    QR:
+      description: Show wallet QR.
+      usage: /QR <coin>
     #dogedeposit:
     #  description: Display your Doge address to deposit to.
     #  usage: /dogedeposit

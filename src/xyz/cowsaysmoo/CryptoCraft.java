@@ -42,6 +42,7 @@ public class CryptoCraft extends JavaPlugin{
         this.getCommand("deposit").setExecutor(new CommandDeposit());
         this.getCommand("wallet").setExecutor(new CommandWallet());
         this.getCommand("shift").setExecutor(new CommandShift());
+        this.getCommand("QR").setExecutor(new CommandQR());
     }
     
     @Override

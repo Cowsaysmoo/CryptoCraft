@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package xyz.cowsaysmoo;
 
 import java.io.BufferedReader;
@@ -21,10 +16,6 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import static xyz.cowsaysmoo.CryptoCraft.plugin;
 
-/**
- *
- * @author Jared
- */
 public class WalletInfo {
     FileConfiguration config = CryptoCraft.plugin.getConfig();
     public String getAddress(CommandSender sender, Command command, String label, String[] args) {

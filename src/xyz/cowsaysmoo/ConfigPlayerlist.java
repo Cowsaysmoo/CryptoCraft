@@ -7,7 +7,7 @@ import static xyz.cowsaysmoo.CryptoCraft.plugin;
 
 public class ConfigPlayerlist{
 
-    ConfigPlayerlist(Player playerJoined) throws IOException{
+    public void ConfigPlayerlist(Player playerJoined) throws IOException{
         String data = (playerJoined.getName() + " " + playerJoined.getUniqueId() + "\n");
         System.out.println(data);
         int search = 0;
