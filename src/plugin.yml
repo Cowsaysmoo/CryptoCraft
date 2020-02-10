@@ -1,5 +1,5 @@
 name: CryptoCraft
-version: a.1.1
+version: a.1.2
 main: xyz.cowsaysmoo.CryptoCraft
 commands:
     tip:
@@ -26,20 +26,5 @@ commands:
     QR:
       description: Show wallet QR.
       usage: /QR <coin>
-    #dogedeposit:
-    #  description: Display your Doge address to deposit to.
-    #  usage: /dogedeposit
-    #dogewithdraw:
-    #  description: See how many Dogecoins you have.
-    #  usage: /dogewithdraw <Send-To-This-Address> <Amount>
-    #dogebalance:
-    #  description: See how many Dogecoins you have.
-    #  usage: /dogebalance
-    #dogetip:
-    #  description: Tip any player Dogecoins.
-    #  usage: /dogetip <Player> <Amount>
-    #dogedonate:
-    #  description: Donate to the server <3 :3.
-    #  usage: /dogedonate
     
    
